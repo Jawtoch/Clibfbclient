@@ -1,0 +1,5 @@
+module CFirebird [system] {
+	header "cfirebird.h"
+	link "fbclient"
+	export *
+}
