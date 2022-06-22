@@ -3,13 +3,7 @@
 Modulemap to use fbclient library on linux and macOS.
 The Firebird library is not provided, you have to install it yourself.
 
-## Linux
-Download the firebird library and install it on your system.
-
-## macOS
-Download the firebird library and install it on your system.
-
-### Link on macOS
+### Linking the Firbird library
 
 #### Using linkerSettings
 
@@ -56,7 +50,7 @@ In `Package.swift`, add the following depedency
 
 ```swift
 # package.swift
-.package(url: "https://github.com/ugocottin/CFirebird.git", from: "0.0.0")
+.package(url: "https://github.com/ugocottin/CFirebird.git", from: "0.1.0")
 ```
 
 In your swift files, import the Firebird system library
