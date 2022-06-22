@@ -7,7 +7,7 @@ final class CFirebirdTests: XCTestCase {
 		var status: [ISC_STATUS] = Array(repeating: 0, count: Int(ISC_STATUS_LENGTH))
 		isc_print_status(&status)
 		let sqlCode = isc_sqlcode(&status)
-		print(sqlCode)
+		XCTAssertEqual(sqlCode, -999)
 	}
 	
 	func testCodingTimestamp() {
